@@ -1,0 +1,33 @@
+[user]
+    name = Mathias Wold
+    email = 45951843+mathiaswold@users.noreply.github.com
+[core]
+    editor = code --wait
+    excludesfile = /Users/mathiaswold/.gitignore
+    pager = delta
+[push]
+    default = current
+    autoSetupRemote = true
+[pull]
+    rebase = true
+[init]
+    defaultBranch = master
+[alias]
+    lg = lg1
+    lgs = lg1s
+    lg1 = lg1s --all
+    lg2 = lg2s --all
+    lg3 = lg3s --all
+
+    lg1s = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)'
+    lg2s = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(auto)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'
+    lg3s = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset) %C(bold cyan)(committed: %cD)%C(reset) %C(auto)%d%C(reset)%n''          %C(white)%s%C(reset)%n''          %C(dim white)- %an <%ae> %C(reset) %C(dim white)(committer: %cn <%ce>)%C(reset)'
+[interactive]
+    diffFilter = delta --color-only
+[delta]
+    navigate = true    # use n and N to move between diff sections
+    line-numbers = true
+[merge]
+    conflictstyle = diff3
+[diff]
+    colorMoved = default
