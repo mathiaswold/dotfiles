@@ -24,3 +24,7 @@ abbr --add dotdot --regex '^\.\.+$' --function multicd
 
 # pyenv
 pyenv init - | source
+
+# fnm
+fnm env --use-on-cd | source
+
