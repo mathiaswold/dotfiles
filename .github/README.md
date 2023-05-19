@@ -22,7 +22,8 @@ git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME config --local status.showUntra
 
 ### Homebrew
 
-[Homebrew Bundle](https://github.com/Homebrew/homebrew-bundle) is used to manage packages and casks.
+[Homebrew Bundle](https://github.com/Homebrew/homebrew-bundle) is used to manage packages and casks. The following will install dependencies from the [Brewfile](../Brewfile).
+
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 eval "$(/opt/homebrew/bin/brew shellenv)"
@@ -44,4 +45,21 @@ fisher update
 
 ```bash
 gh auth login
+```
+
+### Python
+
+[pyenv](https://github.com/pyenv/pyenv) is used to manage Python versions.
+
+```bash
+pyenv install <version>
+pyenv global <version>
+```
+
+[virtualfish](https://virtualfish.readthedocs.io/en/latest/index.html) is used to manage virtual environments.
+
+```bash
+pip install --user virtualfish
+vf install auto_activation projects compat_aliases
+exec fish
 ```

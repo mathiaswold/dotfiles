@@ -10,6 +10,7 @@ abbr -a s git status
 abbr -a c clear
 abbr -a p python
 abbr -a manage python manage.py
+abbr -a w workon
 
 function last_history_item
     echo $history[1]
@@ -20,3 +21,6 @@ function multicd
     echo cd (string repeat -n (math (string length -- $argv[1]) - 1) ../)
 end
 abbr --add dotdot --regex '^\.\.+$' --function multicd
+
+# pyenv
+pyenv init - | source
