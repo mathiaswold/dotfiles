@@ -10,6 +10,12 @@ My personal dotfiles and setup scripts :rocket:
 xcode-select --install
 ```
 
+### Rosetta 2
+
+```bash
+softwareupdate --install-rosetta
+```
+
 ### Dotfiles repository
 Based on [this article](https://fwuensche.medium.com/how-to-manage-your-dotfiles-with-git-f7aeed8adf8b).
 
