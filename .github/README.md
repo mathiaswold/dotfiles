@@ -41,6 +41,10 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 brew bundle install
 ```
 
+### iTerm2
+Load preferences from the [.iterm2](../.iterm2) folder and import the [Default](../.iterm2/Default.json) profile.
+
+
 ### fish shell
 Used with [fisher](https://github.com/jorgebucaran/fisher) plugin manager and [pure](https://github.com/pure-fish/pure) prompt.
 
